@@ -1,0 +1,215 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(15, 1fr);
+    height: 100vh;
+}
+
+.header {
+    grid-area: 1 / 4 / 3 / 16;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 1rem;
+    min-height: 5rem;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+
+label input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #cccccc;
+}
+
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 2 / 11 / 3 / 13;
+    text-align: left;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttons button{
+    width: 20%;
+    border-radius: 16px;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    color: #fafafa;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+
+
+.sidebar {
+    grid-area: 1 / 1 / 13 / 4;
+    background-color: dodgerblue;
+    color: #fafafa;
+    padding: 1rem;
+    min-width: 10rem;
+}
+
+.dashboard-title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    padding: 0.5rem 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    padding: 0.5rem 2rem;
+    text-align: left;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fafafa;
+    display: block;
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-area: 3 / 4 / 13 / 16;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    padding: 1rem;
+    background-color: #cccccc;
+    min-height: 30rem;
+
+}
+
+.project-title {
+    grid-area: 1 / 1 / 2 / 7;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-area: 2 / 1 / 13 / 7; /* Set the grid area to start at row 3, column 3, and end at row 9, column 9 */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    text-align: center;
+}
+
+.project-card {
+
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.5rem;
+    width: 95%;
+    height: 90%;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+}
+
+.project-card p {
+    margin-top: 5px;
+}
+
+.announcement-title {
+    grid-area: 1 / 7 / 2 / 8;
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+
+.trending-title {
+    grid-area: 7 / 7 / 8 / 8;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.news {
+    display: grid;
+    grid-area: 2 / 7 / 13 / 9;
+    grid-template-rows: repeat(15, 1fr);
+    padding: 0 1rem;
+    grid-row-gap: 0.5rem;
+}
+
+.announcement-card {
+    display: grid;
+    grid-row: 1 / 7;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.5rem;
+    width: 95%;
+    height: 100%;
+    text-align: left;
+    background-color: #fafafa;
+}
+
+.trending-card {
+    display: grid;
+    grid-row: 9 / 16;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.5rem;
+    width: 95%;
+    text-align: left;
+    background-color: #fafafa;
+}
+
+h4 {
+    margin: 0;
+}
